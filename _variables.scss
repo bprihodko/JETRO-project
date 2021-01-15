@@ -1,0 +1,34 @@
+$orange:#f07147;
+$lorange:#f09f85;
+$lgrey:#b9b9b9;
+$grey:#616060;
+$dark:#535252;
+$bebas: 'Bebas Neue', cursive;
+$sans: 'Work Sans', sans-serif;
+
+@mixin flexCenter ($value:center) {
+    display: flex;
+    justify-content: ($value);
+    align-items: center;
+}
+
+@mixin text12 {
+    font-family:$sans ;
+    font-size: 12px;  
+}
+@mixin text14 {
+    font-family:$bebas ;
+    font-size: 14px;    
+}
+
+@mixin text16 {
+    font-family:$bebas ;
+    font-size: 16px;
+    font-weight: 500;  
+}
+@mixin text18 {
+    font-family:$bebas ;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;  
+}
