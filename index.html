@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jetro-project</title>
   <link rel="stylesheet" href="reset.css">
+  <link type="text/css" rel="stylesheet" href="lightslider/dist/css/lightslider.css" />
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@1,300&display=swap"
@@ -15,22 +16,25 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-7  col-md-6 col-sm-12">
+      <div class="row header-row">
+        <div class="col-lg-7  col-md-6 col-sm-5">
           <div class="Logo">
             <a href=""><img src="image/Logo.png"></a>
           </div>
         </div>
-        <div class="col-lg-5  col-md-6 col-sm-12">
-          <nav>
-            <ul class="menu">
-              <li><a href="">HOME</a></li>
-              <li><a href="">ABOUT <span class="span-orange"> US</span></a></li>
-              <li><a href="">BLOG</a></li>
-              <li><a href="index3.html">PORTFOLIO</a></li>
-              <li><a href="index4.html">CONTACT<span class="span-orange"> US</span></a></li>
-            </ul>
-          </nav>
+        <div class="col-lg-5  col-md-6 col-sm-2">
+          <ul class="menu navigation hidden-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index1.html">ABOUT <span class="span-orange"> US</span></a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="index3.html">PORTFOLIO</a></li>
+            <li><a href="index4.html">CONTACT<span class="span-orange"> US</span></a></li>
+          </ul>
+          <div class="nav-mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </div>
@@ -40,10 +44,33 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12  col-md-12  col-sm-12">
-          <div class="slider-box"><img src="image/image.png"></div>
+      <div class="slider-box">
+        <ul class="lightSlider">
+          <li data-thumb="image/image.png">
+            <img src="image/image.png">
+          </li>
+        <li data-thumb="image/image1.png">
+            <img src="image/image1.png">
+          </li>
+        <li data-thumb="image/image3.png">
+            <img src="image/image3.png">
+          </li>
+          <li data-thumb="image/image4.png">
+            <img src="image/image4.png">
+          </li>
+        <li data-thumb="image/image5.png">
+            <img src="image/image5.png">
+          </li>
+          <li data-thumb="image/image6.png">
+            <img src="image/image6.png">
+          </li>
+        </ul>
+      </div>
         </div>
+      </div>
 
-        <!--<div class="col-lg-2  col-md-6 col-sm-12">
+
+      <!--<div class="col-lg-2  col-md-6 col-sm-12">
           <div class="description">
             <div class="description-image"><img src="image/image.png"></div>
             <div class="description-image"><img src="image/image1.png"></div>
@@ -54,8 +81,8 @@
           </div>
         </div>-->
 
-      </div>
     </div>
+  </div>
   </div>
 
   <main class="main">
@@ -104,48 +131,48 @@
 
       <div class="row">
         <div class="description">
-        <div class="col-lg-2">
-          <div class="description-title">RECENT WORKS</div>
+          <div class="col-lg-2">
+            <div class="description-title">RECENT WORKS</div>
+          </div>
+          <div class="col-lg-10">
+            <div class="grey-line"></div>
+          </div>
         </div>
-        <div class="col-lg-10">
-          <div class="grey-line"></div>
-        </div>
-      </div>
       </div>
       <div class="row">
         <div class="col-lg-3  col-md-6 col-sm-12">
           <div class="works-item">
             <div class="works-image"><img src="image/man.png"></div>
             <div class="works-box">
-            <div class="post">CHARACTER DESIGN</div>
-            <div class="date">JUNE 15.2020</div>
+              <div class="post">CHARACTER DESIGN</div>
+              <div class="date">JUNE 15.2020</div>
             </div>
           </div>
         </div>
         <div class="col-lg-3  col-md-6 col-sm-12">
           <div class="works-item">
             <div class="works-image"><img src="image/girafe.png"></div>
-              <div class="works-box">
-            <div class="post">BROCHURE DESIGN </div>
-            <div class="date">JUNE 15.2020</div>
-              </div>
+            <div class="works-box">
+              <div class="post">BROCHURE DESIGN </div>
+              <div class="date">JUNE 15.2020</div>
+            </div>
           </div>
         </div>
         <div class="col-lg-3  col-md-6 col-sm-12">
           <div class="works-item">
             <div class="works-image"><img src="image/media.png"></div>
-              <div class="works-box">
-            <div class="post">SOCIAL MEDIA BUTTONS</div>
-            <div class="date">JUNE 15.2020</div>
-              </div>
+            <div class="works-box">
+              <div class="post">SOCIAL MEDIA BUTTONS</div>
+              <div class="date">JUNE 15.2020</div>
+            </div>
           </div>
         </div>
         <div class="col-lg-3  col-md-6 col-sm-12">
           <div class="works-item">
             <div class="works-image"><img src="image/man1.png"></div>
-              <div class="works-box">
-            <div class="post">10 AMAZING WEBSITES</div>
-            <div class="date">JUNE 15.2020</div>
+            <div class="works-box">
+              <div class="post">10 AMAZING WEBSITES</div>
+              <div class="date">JUNE 15.2020</div>
             </div>
           </div>
         </div>
@@ -204,8 +231,9 @@
     </div>
   </footer>
 
-
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="lightslider/dist/js/lightslider.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>

@@ -30,20 +30,19 @@
     padding-right: 15px;
     padding-left: 15px;
     flex-wrap: wrap;
-
 }
 nav {
     width: 100%;
 }
 .menu {
      @include flexCenter (space-between);
+      width: 100%;
      cursor: pointer;
      li {
          margin-right: 30px;
          &:last-child {
          margin-right: 0px;
          }
-
       a {
        text-decoration: none;
        @include  text16;
@@ -61,18 +60,13 @@ nav {
 }
 }
 
-
 .slider, .contact, .portfolio {
     background-image: url(image/topbg.png);
     background-repeat: repeat-x;
 }
-
 .slider-box {
     position: relative;
     width: 100%;
- img  {
-    width: 100%;
-    }
 }
 .features-box{
     display: flex;
@@ -82,8 +76,7 @@ nav {
     width: 50px;
     height: 50px;
     background-repeat: no-repeat;
-    margin-right: 23px;
-    
+    margin-right: 23px; 
 }
 .porfolio {
     background-image: url(image/potfolio.png);
@@ -103,6 +96,31 @@ nav {
     color: $grey;
     padding-bottom: 20px;
     line-height: 18px;
+}
+.about-bottom {
+  padding-bottom: 30px;
+  font-style: normal;
+}
+.about-image {
+    padding-right: 25px;
+}
+.about-line {
+    padding-bottom: 30px;
+    margin-left: 50px;
+}
+.italic {
+    font-style: italic;
+    color: $lgrey;
+    border-left: 8px solid $orange;
+    padding-left: 18px;
+     padding-bottom: 0px;
+}
+
+.big-letter {
+      font-family:$sans ;
+      font-weight: bold;
+      font-size: 36px;
+      color: $orange;
 }
 .more {
     font-family:$bebas ;
@@ -142,7 +160,7 @@ nav {
 }
 
 .portfolio-item:hover .portfolio-image img {
-    filter: brightness(70%); 
+   filter: grayscale(80%);
 }
 .portfolio-item:hover .increase {
    display: flex; 
@@ -177,17 +195,17 @@ footer {
     background-image: url(image/footer-left.png);
 }
 
-
 .footer-item {
     padding: 30px 30px;
 }
-
 .footer-box {
     background-color: $orange;
     align-items: flex-start;
     display: flex;
     position: relative;
+    flex-wrap: wrap;
 }
+
 .footer-box:before, .slider-box:before, 
 .contact-box:before {
     content: "";
@@ -198,7 +216,6 @@ footer {
     left: -10px;
     top: 0px;
     background: #fff;
-
 }
 .footer-box:after, .slider-box:after,
 .contact-box:after {
@@ -258,7 +275,6 @@ footer {
          &:last-child {
          margin-right: 0px;
          }
-
       a {
        text-decoration: none;
        @include  text14;
@@ -272,28 +288,23 @@ footer {
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contact-section  {
     display: flex;
     margin-top: 25px;
     margin-bottom: 40px;
 }
 .map {
+    width: 100%;
+    margin: 0px;
     margin-bottom: 35px;
+    iframe {
+        width: 100%;
+    }
 }
-
+.full-width {
+    width: 100%;
+        margin: 0px;
+}
 .contact-form {
     width: 100%;
 }
@@ -306,12 +317,11 @@ footer {
     padding: 20px 20px;
     background-color: $orange;
 }
-.contact-conteiner {
-    @include flexCenter ();
-}
+
 .text {
    border: 1px solid $orange;
    margin-bottom: 10px;
+   width: 220px;
 }
 .text::-webkit-input-placeholder { 
     font-family:$bebas ;
@@ -322,10 +332,12 @@ footer {
 .textarea::-webkit-input-placeholder { 
     font-family:$bebas ;
     font-size: 12px; 
-    color: $orange;
-   
+    color: $orange; 
+    padding: 10px 15px;
 }
-
+.text:focus, .textarea:focus {
+    outline-color: $orange;
+}
 .submit {
     background-color: $orange;
      font-family:$bebas ;
@@ -334,15 +346,14 @@ footer {
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
+    margin-bottom: 20px;
  }
 .textarea {
     border: 1px solid $orange;
     height: 205px;
-    width: 465px;
     width: 100%;
     margin-bottom: 10px;
 }
-
 .red {
     color: $orange;
 }
@@ -354,7 +365,6 @@ footer {
 .dark {
     color: $dark;
 }
-
 .cub {
     width: 50px;
     height: 50px;
@@ -367,14 +377,76 @@ footer {
     margin-right: 0px;
 }
    
-.col {
-    padding-left: 0px;
-   
-}
 .sidebar-item {
     width: 100%;
 }
 
+.tab-title-items {
+    display: flex;
+}
+.tab-title-item {
+    padding: 15px 20px;
+    border: 1px solid $orange;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    @include  text14;
+    color: $lgrey;
+}
+.tab-title-item:hover, .active {
+   color: white;
+    background-color: $orange;
+    margin: 15px;
+    border-radius: 10px;
+
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+.lightSlider {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+  
+    li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;}
+
+    img {
+    display: block;
+    height: auto;
+   width: 100%;
+   
+}
+}
+
+.lslide.active {
+    margin: 0px;
+}
+
+.lSPager {
+    display: flex;
+    li {
+        a {
+                display: flex;
+    height: 100%;
+        }
+    }
+     li.active {
+    width: 140px;
+    height: 120px;
+    margin-left: 0px !important;
+}
+}
+li.active:last-child {
+margin-right: 0px;
+}
 
 
 
@@ -385,8 +457,13 @@ footer {
 
 
 
-
-
+@media(min-width:993px) {
+    
+.col {
+    padding-left: 0px;
+   
+}
+}
 
 
 @media(max-width: 992px) {
@@ -395,8 +472,84 @@ footer {
 
 @media(max-width: 767px) {
 
+     .menu  {
+   display: block; 
+   text-align: center;
+   overflow: scroll;
+ li {
+    margin: 20px 0;
+    a {
+        color: $orange;
+        .span-orange {
+              color: $lorange;   
+    }
+}
+}
+}
+
 .footer-box:before, .slider-box:before,
  .footer-box:after, .slider-box:after {
 display: none;
 }
+.nav-mobile-menu {
+    position: relative;
+    width: 15px;
+    height: 15px;
+        span {
+    height: 1px;
+    background-color: $dark;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: .250s ease-in-out ; 
+    &:nth-child(1) {
+        top: 3px;
+    }
+     &:nth-child(2) {
+        top: 7px;
+    }
+     &:nth-child(3) {
+        bottom: 3px;
+    }
+    }
+}
+.hidden-menu {
+    opacity: 0;
+    visibility: hidden;
+}
+.navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    transition: all 250ms ease-in-out ;
+    transform: translateX(150%);
+    z-index: 10;
+}
+.header-row {
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-mobile-menu.active-menu span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+.nav-mobile-menu.active-menu span:nth-child(2) {
+        top: 50%;
+    transform: rotate(-45deg);
+    }
+.nav-mobile-menu.active-menu span:nth-child(3) {
+    transform: scale(0);
+    }
+.navigation.active-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    top: 72px;
+    background-color:white;
+   
+}
 }    
+    
