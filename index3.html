@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jetro-project3</title>
   <link rel="stylesheet" href="reset.css">
+  <link type="text/css" rel="stylesheet" href="lightbox/dist/css/lightbox.css" />
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@1,300&display=swap"
@@ -48,148 +49,203 @@
         </div>
       </div>
       <div class="col-lg-4  col-md-6 col-sm-12">
-          <ul class="menu-filter">
-            <li><a href="">ALL</a></li>
-            <li><a href="">PRINT</a></li>
-            <li><a href="">WEB</a></li>
-            <li><a href="">PHOTOSHOP</a></li>
-            <li><a href="">WORDPRESS</a></li>
-          </ul>
+        <ul class="menu-filter tab-title-items">
+          <li><a href="" class="tab-all-show">ALL</a></li>
+          <li><a href="" class="tab-title-item">PRINT</a></li>
+          <li><a href="" class="tab-title-item">WEB</a></li>
+          <li><a href="" class="tab-title-item">PHOTOSHOP</a></li>
+
+        </ul>
       </div>
-
-      <div class="row">
-        <div class="col-lg-3  col-md-6 col-sm-12">
-          <div class="portfolio-item">
-            <div class="portfolio-image"><img src="image/man.png"></div>
-            <div class="increase"></div>
-            <div class="portfolio-box">
-              <div class="post">CHARACTER DESIGN</div>
-              <div class="date">JUNE 15.2020</div>
+      <div class="tab-conteiner">
+          <div class="tab-content">
+            <div class="row">
+              <div class="col-lg-3  col-md-6 col-sm-12">
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="image/man.png" data-lightbox="image" data-title="CHARACTER DESIGN">
+                    <img src="image/man.png" alt="Image-1">
+                    <div class="increase"></div>
+                  </a>
+                </div>
+                <div class="portfolio-box">
+                  <div class="post">CHARACTER DESIGN</div>
+                  <div class="date">JUNE 15.2020</div>
+                </div>
+              </div>
+              </div>
+              <div class="col-lg-3  col-md-6 col-sm-12">
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="image/girafe.png" data-lightbox="image" data-title="BROCHURE DESIGN">
+                    <img src="image/girafe.png" alt="Image-2">
+                    <div class="increase"></div>
+                  </a>
+                </div>
+                <div class="portfolio-box">
+                  <div class="post">BROCHURE DESIGN</div>
+                  <div class="date">JUNE 15.2020</div>
+                </div>
+              </div>
+              </div>
+              <div class="col-lg-3  col-md-6 col-sm-12">
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="image/media.png" data-lightbox="image" data-title="SOCIAL MEDIA BUTTONS">
+                    <img src="image/media.png" alt="Image-3">
+                    <div class="increase"></div>
+                  </a>
+                </div>
+                <div class="portfolio-box">
+                  <div class="post">SOCIAL MEDIA BUTTONS</div>
+                  <div class="date">JUNE 15.2020</div>
+                </div>
+              </div>
+              </div>
+              <div class="col-lg-3  col-md-6 col-sm-12">
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="image/man1.png" data-lightbox="image" data-title="WORDPRESS THEME">
+                    <img src="image/man1.png" alt="Image-4">
+                    <div class="increase"></div>
+                  </a>
+                </div>
+                <div class="portfolio-box">
+                  <div class="post">WORDPRESS THEME</div>
+                  <div class="date">JUNE 15.2020</div>
+                </div>
+              </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3  col-md-6 col-sm-12">
-          <div class="portfolio-item">
-            <div class="portfolio-image"><img src="image/girafe.png"></div>
-            <div class="increase"></div>
-            <div class="portfolio-box">
-              <div class="post">BROCHURE DESIGN</div>
-              <div class="date">JUNE 15.2020</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3  col-md-6 col-sm-12">
-          <div class="portfolio-item">
-            <div class="portfolio-image"><img src="image/media.png"></div>
-            <div class="increase"></div>
-            <div class="portfolio-box">
-              <div class="post">SOCIAL MEDIA BUTTONS</div>
-              <div class="date">JUNE 15.2020</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3  col-md-6 col-sm-12">
-          <div class="portfolio-item">
-            <div class="portfolio-image"><img src="image/man1.png"></div>
-            <div class="increase"></div>
-            <div class="portfolio-box">
-              <div class="post">WORDPRESS THEME</div>
-              <div class="date">JUNE 15.2020</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3  col-md-6 col-sm-12">
-          <div class="portfolio-item">
-            <div class="portfolio-image"><img src="image/image.png"></div>
-            <div class="increase"></div>
-            <div class="portfolio-box">
-              <div class="post">POSTER</div>
-              <div class="date">JUNE 15.2020</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3  col-md-6 col-sm-12">
-          <div class="portfolio-item">
-            <div class="portfolio-image"><img src="image/plane.png"></div>
-            <div class="increase"></div>
-            <div class="portfolio-box">
-              <div class="post">WEB GRAPHIC ELEMENT</div>
-              <div class="date">JUNE 15.2020</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3  col-md-6 col-sm-12">
-          <div class="portfolio-item">
-            <div class="portfolio-image"><img src="image/pistol.png"></div>
-            <div class="increase"></div>
-            <div class="portfolio-box">
-              <div class="post">BROCHURE DESIGN</div>
-              <div class="date">JUNE 15.2020</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3  col-md-6 col-sm-12">
-          <div class="portfolio-item">
-            <div class="portfolio-image"><img src="image/bunny.png"></div>
-            <div class="increase"></div>
-            <div class="portfolio-box">
-              <div class="post">BIG BUCK BUNNEY</div>
-              <div class="date">JUNE 15.2020</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3  col-md-6 col-sm-12">
-          <div class="portfolio-item">
-            <div class="portfolio-image"><img src="image/people.png"></div>
-            <div class="increase"></div>
-            <div class="portfolio-box">
-              <div class="post">CARTOON CHARACTERS</div>
-              <div class="date">JUNE 15.2020</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3  col-md-6 col-sm-12">
-          <div class="portfolio-item">
-            <div class="portfolio-image"><img src="image/sticker.png"></div>
-            <div class="increase"></div>
-            <div class="portfolio-box">
-              <div class="post">STICKER DESIGN</div>
-              <div class="date">JUNE 15.2020</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3  col-md-6 col-sm-12">
-          <div class="portfolio-item">
-            <div class="portfolio-image"><img src="image/card.png"></div>
-            <div class="increase"></div>
-            <div class="portfolio-box">
-              <div class="post">BUSINESS CARD</div>
-              <div class="date">JUNE 15.2020</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3  col-md-6 col-sm-12">
-          <div class="portfolio-item">
-            <div class="portfolio-image"><img src="image/image6.png"></div>
-            <div class="increase"></div>
-            <div class="portfolio-box">
-              <div class="post">SLIDER PLUGIN</div>
-              <div class="date">JUNE 15.2020</div>
-            </div>
-          </div>
-        </div>
 
 
+          <div class="tab-content"><div class="row">
 
+            <div class="col-lg-3  col-md-6 col-sm-12">
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="image/image.png" data-lightbox="image" data-title="POSTER">
+                    <img src="image/image.png" alt="Image-5">
+                    <div class="increase"></div>
+                  </a>
+                </div>
+                <div class="portfolio-box">
+                  <div class="post">POSTER</div>
+                  <div class="date">JUNE 15.2020</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-sm-12">
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="image/plane.png" data-lightbox="image" data-title="WEB GRAPHIC ELEMENT">
+                    <img src="image/plane.png" alt="Image-6">
+                    <div class="increase"></div>
+                  </a>
+                </div>
+                <div class="portfolio-box">
+                  <div class="post">WEB GRAPHIC ELEMENT</div>
+                  <div class="date">JUNE 15.2020</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-sm-12">
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="image/pistol.png" data-lightbox="image" data-title="BROCHURE DESIGN">
+                    <img src="image/pistol.png" alt="Image-7">
+                    <div class="increase"></div>
+                  </a>
+                </div>
+                <div class="portfolio-box">
+                  <div class="post">BROCHURE DESIGN</div>
+                  <div class="date">JUNE 15.2020</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-sm-12">
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="image/bunny.png" data-lightbox="image" data-title="BIG BUCK BUNNEY">
+                    <img src="image/bunny.png" alt="Image-8">
+                    <div class="increase"></div>
+                  </a>
+                </div>
+                <div class="portfolio-box">
+                  <div class="post">BIG BUCK BUNNEY</div>
+                  <div class="date">JUNE 15.2020</div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="tab-content"><div class="row">
 
-
-
-
-
-
-
+            <div class="col-lg-3  col-md-6 col-sm-12">
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="image/people.png" data-lightbox="image" data-title="CARTOON CHARACTERS">
+                    <img src="image/people.png" alt="Image-9">
+                    <div class="increase"></div>
+                  </a>
+                </div>
+                <div class="portfolio-box">
+                  <div class="post">CARTOON CHARACTERS</div>
+                  <div class="date">JUNE 15.2020</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-sm-12">
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="image/sticker.png" data-lightbox="image" data-title="STICKER DESIGN">
+                    <img src="image/sticker.png" alt="Image-10">
+                    <div class="increase"></div>
+                  </a>
+                </div>
+                <div class="portfolio-box">
+                  <div class="post">STICKER DESIGN</div>
+                  <div class="date">JUNE 15.2020</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-sm-12">
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="image/card.png" data-lightbox="image" data-title="BUSINESS CARD">
+                    <img src="image/card.png" alt="Image-11">
+                    <div class="increase"></div>
+                  </a>
+                </div>
+                <div class="portfolio-box">
+                  <div class="post">BUSINESS CARD</div>
+                  <div class="date">JUNE 15.2020</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-sm-12">
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="image/image6.png" data-lightbox="image" data-title="SLIDER PLUGIN">
+                    <img src="image/image6.png" alt="Image-12">
+                    <div class="increase"></div>
+                  </a>
+                </div>
+                <div class="portfolio-box">
+                  <div class="post">SLIDER PLUGIN</div>
+                  <div class="date">JUNE 15.2020</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+
 
 
 
@@ -245,7 +301,9 @@
   </footer>
 
 
-<script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="lightbox/dist/js/lightbox.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>

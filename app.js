@@ -21,6 +21,7 @@ mobileMenu.addEventListener('click', function () {
 let tabItems = document.querySelectorAll(".tab-title-item");
 let tabContent = document.querySelectorAll(".tab-content");
 let tabsWrap = document.querySelector(".tab-title-items");
+let tabsAll = document.querySelector(".tab-all-show");
 
 function hideTabsContent() {
     tabContent.forEach(tab => {
@@ -44,89 +45,48 @@ if (tabContent.length > 0) {
     showTabsContent();
 
     tabsWrap.addEventListener("click", function (e) {
+        e.preventDefault();
         let target = e.target;
 
         if (target.classList.contains("tab-title-item")) {
             tabItems.forEach((item, i) => {
                 if (target == item) {
-                    hideTabsContent();
+                    hideTabsContent(i);
                     showTabsContent(i);
                 }
             })
         }
-    })
 
-}
+        if (target.classList.contains("tab-all-show")) {
+            tabItems.forEach((item, i) => {
+                showTabsContent(i);
+            })
+    }
+
+})
+};
 
 
 
 // slider
-/*
+
 $(document).ready(function () {
-    $("#lightSlider").lightSlider();
+        var slider = $(".lightSlider").lightSlider({
+            gallery: true,
+            item: 1,
+            loop: true,
+            slideMargin: 0,
+            thumbItem: 6
+        }); 
+    
 });
 
-$(document).ready(function () {
-    $("#lightSlider").lightSlider({
-        item: 3,
-        autoWidth: false,
-        slideMove: 1, // slidemove will be 1 if loop is true
-        slideMargin: 10,
-
-        addClass: '',
-        mode: "slide",
-        useCSS: true,
-        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
-        easing: 'linear', //'for jquery animation',////
-
-        speed: 400, //ms'
-        auto: false,
-        loop: false,
-        slideEndAnimation: true,
-        pause: 2000,
-
-        keyPress: false,
-        controls: true,
-        prevHtml: '',
-        nextHtml: '',
-
-        rtl: false,
-        adaptiveHeight: false,
-
-        vertical: false,
-        verticalHeight: 500,
-        vThumbWidth: 100,
-
-        thumbItem: 10,
-        pager: true,
-        gallery: false,
-        galleryMargin: 5,
-        thumbMargin: 5,
-        currentPagerPosition: 'middle',
-
-        enableTouch: true,
-        enableDrag: true,
-        freeMove: true,
-        swipeThreshold: 40,
-
-        responsive: [],
-
-        onBeforeStart: function (el) { },
-        onSliderLoad: function (el) { },
-        onBeforeSlide: function (el) { },
-        onAfterSlide: function (el) { },
-        onBeforeNextSlide: function (el) { },
-        onBeforePrevSlide: function (el) { }
-    });
-});*/
 
 
-$(document).ready(function () {
-    var slider = $(".lightSlider").lightSlider({
-        gallery: true,
-        item: 1,
-        loop: true,
-        slideMargin: 0,
-        thumbItem: 6
-    });
-});
+// lightbox
+
+
+lightbox.option({
+    'wrapAround': false,
+    'disableScrolling': true
+})

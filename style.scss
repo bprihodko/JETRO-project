@@ -271,7 +271,7 @@ footer {
      cursor: pointer;
      li {
          margin: 35px 0;
-         margin-right: 5px;
+         margin-right: 20px;
          &:last-child {
          margin-right: 0px;
          }
@@ -384,7 +384,7 @@ footer {
 .tab-title-items {
     display: flex;
 }
-.tab-title-item {
+.tab-title-item, .tab-all-show {
     padding: 15px 20px;
     border: 1px solid $orange;
     margin: 15px;
@@ -404,7 +404,7 @@ footer {
     display: none;
 }
 .show {
-    display: block;
+    display: flex;
 }
 
 .lightSlider {
@@ -448,7 +448,14 @@ li.active:last-child {
 margin-right: 0px;
 }
 
-
+/*.lb-image {
+    width: 100%;
+    height: 100%;
+}
+.lb-outerContainer {
+    width: 300px;
+    height: 240px;
+}*/
 
 
 
@@ -551,5 +558,20 @@ display: none;
     background-color:white;
    
 }
+.menu-filter {
+        li {
+         margin: 35px 0;
+         margin-right: 0px;
+        a {
+        padding: 5px 5px;
+     }
+}
+}
+.about-image {
+    padding-right: 0px;
+    margin: 0 auto;
+    padding-bottom: 15px;
 }    
+
     
+}
